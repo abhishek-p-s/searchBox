@@ -3,7 +3,8 @@ import Select from "react-select";
 import '../components/DropDown.css'
 
 import Search from './Search'
-import Resources from './Resources'
+//import Resources from './Resources'
+import Contract from "./Contract";
 
 
 const options = [
@@ -20,10 +21,11 @@ export default function DropDown(props) {
                 defaultValue={selectedOption}
                 onChange={setSelectedOption}
                 options={options}
+                value={selectedOption}
             />
             {
-                selectedOption.value === "Project" ? <Search></Search> : selectedOption.value === "Resources" ?
-                    <Resources filteredData={props.filteredData}></Resources> : ""
+                selectedOption.value === "Project" ? <Search></Search> : selectedOption.value === "Contracters" ?
+                <Contract filteredData={props.filteredData}></Contract>: ""
             }
         </div>
     );

@@ -10,7 +10,6 @@ function App() {
     <BrowserRouter>
         <div className="App bg-light ">
             <Search></Search>
-            
         </div>
     </BrowserRouter>
   );

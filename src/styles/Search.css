@@ -18,6 +18,8 @@
     font-size: 16px;
     box-sizing: border-box;
     outline: none;
+    margin-left: 20rem;
+    
 }
 
 .link{
@@ -26,5 +28,5 @@
 }
 .dropdown{
     width: 9rem;
-   margin-left: 170px;
+   margin-left: 100px;
 }

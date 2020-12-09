@@ -22,7 +22,7 @@ function Details(props) {
 
                         {filteredData.map(item => (
                             <tr>
-                                <td>{item.projectName}</td>
+                                <td key={item.projectName}>{item.projectName}</td>
                                 <td> {item.ContractorName}</td>
                                 <td>{item.TaskNumber}</td>
                                 <Link className="link" to="arun.html"> <td>{item.AssignedTo}</td></Link>

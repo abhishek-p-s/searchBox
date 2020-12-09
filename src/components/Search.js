@@ -3,6 +3,7 @@ import '../styles/Search.css'
 import data from '../Data'
 import Details from './Details'
 import DropDown from './DropDown'
+import { MDBCol } from "mdbreact";
 
 
 class Search extends React.Component {
@@ -33,24 +34,21 @@ class Search extends React.Component {
             );
         })
         return (
-           
-                <div className="container" >
-                    <div className="searchBox">
-                        <DropDown filteredData={filteredData}></DropDown>
-                        <input
-                            type="text"
-                            value={this.state.search}
-                            placeholder="Search task"
-                            onChange={this.data}
-                            id="searchBox"
-                        />
-                        <i class="fa fa-search search-icon"></i>
-                    </div>
-                    <div >
-                    </div>
-                    <Details filteredData={filteredData}></Details>
+
+            <div className="container" >
+                <div className="searchBox">
+                    <DropDown filteredData={filteredData}></DropDown>
+                    <MDBCol md="6">
+                        <input className="form-control" type="text" placeholder="Search task" value={this.state.search}
+                            aria-label="Search"
+                            onChange={this.data} />
+                    </MDBCol>
                 </div>
-            
+                <div >
+                </div>
+                <Details filteredData={filteredData}></Details>
+            </div>
+
 
         )
     }
