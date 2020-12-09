@@ -1,9 +1,8 @@
 import React from 'react'
-
 import '../styles/Search.css'
 import data from '../Data'
-
 import Details from './Details'
+import DropDown from './DropDown'
 
 
 class Search extends React.Component {
@@ -34,9 +33,10 @@ class Search extends React.Component {
             );
         })
         return (
-            <div className="bg-light">
+           
                 <div className="container" >
                     <div className="searchBox">
+                        <DropDown filteredData={filteredData}></DropDown>
                         <input
                             type="text"
                             value={this.state.search}
@@ -50,7 +50,7 @@ class Search extends React.Component {
                     </div>
                     <Details filteredData={filteredData}></Details>
                 </div>
-            </div>
+            
 
         )
     }

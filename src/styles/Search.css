@@ -6,7 +6,7 @@
 
 .search-icon{
     position: absolute;
-   top:73px;
+   top:120px;
    font-size: 23px;
    color:#D3D3D3;
    right: 550px;
@@ -23,4 +23,8 @@
 .link{
     text-decoration: none;
     color: inherit;
+}
+.dropdown{
+    width: 9rem;
+   margin-left: 170px;
 }

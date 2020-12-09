@@ -3,7 +3,7 @@ import { Table } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
 
-function Details(props) {
+function Contract(props) {
     const filteredData = props.filteredData
     return (
         <div>
@@ -11,11 +11,11 @@ function Details(props) {
                 <Table className=" striped bordered hover" variant="light">
                     <thead>
                         <tr>
-                            <th>Project Name</th>
-                            <th>Contractor Name</th>
-                            <th>Task Number</th>
-                            <th>Assigned To</th>
-                            <th>status</th>
+                            <th>Company Name</th>
+                            <th>project name</th>
+                            <th>amount</th>
+                            <th>Status</th>
+
                         </tr>
                     </thead>
                     <tbody>
@@ -36,4 +36,4 @@ function Details(props) {
     )
 }
 
-export default Details
+export default Contract
