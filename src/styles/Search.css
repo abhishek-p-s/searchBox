@@ -1,0 +1,26 @@
+.container{
+    width: 100%;
+    margin: 4rem auto;
+    max-width: 40rem;
+}
+
+.search-icon{
+    position: absolute;
+   top:73px;
+   font-size: 23px;
+   color:#D3D3D3;
+   right: 550px;
+
+}
+.container input{
+    width: 30rem;
+    padding: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.link{
+    text-decoration: none;
+    color: inherit;
+}
