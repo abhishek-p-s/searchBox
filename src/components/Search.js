@@ -23,7 +23,6 @@ class Search extends React.Component {
 
         }
     }
-
     render() {
 
         const { search } = this.state;
@@ -34,7 +33,6 @@ class Search extends React.Component {
             );
         })
         return (
-
             <div className="container" >
                 <div className="searchBox">
                     <DropDown filteredData={filteredData}></DropDown>
@@ -48,8 +46,6 @@ class Search extends React.Component {
                 </div>
                 <Details filteredData={filteredData}></Details>
             </div>
-
-
         )
     }
 }

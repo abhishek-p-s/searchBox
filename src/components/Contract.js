@@ -14,6 +14,7 @@ function Contract(props) {
                             <th>Company Name</th>
                             <th>project name</th>
                             <th>amount</th>
+                            <th>assigned to</th>
                             <th>Status</th>
 
                         </tr>
@@ -23,9 +24,9 @@ function Contract(props) {
                         {filteredData.map(item => (
                             <tr>
                                 <td>{item.projectName}</td>
-                                <td> {item.ContractorName}</td>
-                                <td>{item.TaskNumber}</td>
-                                <Link className="link" to="arun.html"> <td>{item.AssignedTo}</td></Link>
+                                <td> {item.projectName}</td>
+                                <td>{item.amount}</td>
+                                <Link className="link" to=""> <td>{item.AssignedTo}</td></Link>
                                 <td className={item.status === "completed" ? "text-success" : item.status === "ongoing" ? "text-warning" : "text-danger"}>{item.status}</td>
                             </tr>
                         ))}

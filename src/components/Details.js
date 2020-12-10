@@ -25,7 +25,7 @@ function Details(props) {
                                 <td key={item.projectName}>{item.projectName}</td>
                                 <td> {item.ContractorName}</td>
                                 <td>{item.TaskNumber}</td>
-                                <Link className="link" to="arun.html"> <td>{item.AssignedTo}</td></Link>
+                                <Link className="link" to=""> <td>{item.AssignedTo}</td></Link>
                                 <td className={item.status === "completed" ? "text-success" : item.status === "ongoing" ? "text-warning" : "text-danger"}>{item.status}</td>
                             </tr>
                         ))}

@@ -14,6 +14,7 @@ function Resources(props) {
                             <th>Company Name</th>
                             <th>Company short Name</th>
                             <th>company code</th>
+                            <th>AssignedTo</th>
                             <th>Status</th>
                             
                         </tr>
@@ -23,9 +24,9 @@ function Resources(props) {
                         {filteredData.map(item => (
                             <tr>
                                 <td>{item.projectName}</td>
-                                <td> {item.ContractorName}</td>
+                                <td> {item.short}</td>
                                 <td>{item.TaskNumber}</td>
-                                <Link className="link" to="arun.html"> <td>{item.AssignedTo}</td></Link>
+                                <Link className="link" to=""> <td>{item.AssignedTo}</td></Link>
                                 <td className={item.status === "completed" ? "text-success" : item.status === "ongoing" ? "text-warning" : "text-danger"}>{item.status}</td>
                             </tr>
                         ))}
